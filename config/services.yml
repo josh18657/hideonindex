@@ -1,0 +1,9 @@
+services:
+    josh18657.hideonindex.listener:
+        class: josh18657\hideonindex\event\main_listener
+        arguments:
+            - '@language'
+            - '@user'
+            - '@request'
+        tags:
+            - { name: event.listener }
